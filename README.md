@@ -2,6 +2,7 @@
 
 In this competition, we’re challenged to develop an algorithm that automatically removes the photo studio background. This will allow Carvana to superimpose cars on a variety of backgrounds. You’ll be analyzing a dataset of photos, covering different vehicles with a wide variety of year, make, and model combinations.
 
+challenge : [link](https://www.kaggle.com/c/carvana-image-masking-challenge)
 ![image](https://user-images.githubusercontent.com/29517840/155557658-7409be20-27e9-4ecb-83a8-f84d371cfb50.png)
 
 ## Data Description
