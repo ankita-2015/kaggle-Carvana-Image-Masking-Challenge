@@ -2,7 +2,8 @@
 
 In this competition, we’re challenged to develop an algorithm that automatically removes the photo studio background. This will allow Carvana to superimpose cars on a variety of backgrounds. You’ll be analyzing a dataset of photos, covering different vehicles with a wide variety of year, make, and model combinations.
 
-challenge : [link](https://www.kaggle.com/c/carvana-image-masking-challenge)
+challenge : [Link](https://www.kaggle.com/c/carvana-image-masking-challenge)
+
 ![image](https://user-images.githubusercontent.com/29517840/155557658-7409be20-27e9-4ecb-83a8-f84d371cfb50.png)
 
 ## Data Description
@@ -22,7 +23,11 @@ The metric used to score this competition requires that your submissions are in 
   2. DeeplabV3p with MobileNetV2 architecture with pretrained cityscapes weights
   3. DeeplabV3p with MobileNetV2 architecture with pretrained MobilenetV2 encoder
 
-For training and generating test results i have used efficient data pipeline [tf.data](https://www.tensorflow.org/guide/data)
+  **Key points**
+  - For training and generating test results i have used efficient data pipeline [tf.data](https://www.tensorflow.org/guide/data)
+  - Adam Optimizer
+  - dice_loss + bce_jaccard_loss [from segmentation-models API](https://segmentation-models.readthedocs.io/en/latest/api.html#losses) 
+  - Batch size = 8
 
 ## Results
  I have recieved these results on training each model for just 10 epochs.
